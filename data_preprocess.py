@@ -1,4 +1,4 @@
-from datetime import timedelta, datetime
+﻿from datetime import timedelta, datetime
 import glob
 from itertools import chain
 import json
@@ -11,9 +11,9 @@ import pickle
 
 pd.options.mode.chained_assignment = None
 
-train = pd.read_json('data_kakao/data/arena3_train.json', typ = 'frame')
-val = pd.read_json('data_kakao/data/arena3_val.json',typ = 'frame')
-test = pd.read_json('data_kakao/data/arena3_test.json',typ = 'frame')
+train = pd.read_json('data_kakao/data/train.json', typ = 'frame')
+val = pd.read_json('data_kakao/data/val.json',typ = 'frame')
+test = pd.read_json('data_kakao/data/test.json',typ = 'frame')
 
 #1D numpy array
 train_playId_set = train['id'].unique()
@@ -129,9 +129,9 @@ playId2like = {}
 songId2playIds = {}
 tag2playIds = {}
 
-train = pd.read_json('data_kakao/data/arena3_train.json', typ = 'frame')
-val = pd.read_json('data_kakao/data/arena3_val.json',typ = 'frame')
-test = pd.read_json('data_kakao/data/arena3_test.json',typ = 'frame')
+train = pd.read_json('data_kakao/data/train.json', typ = 'frame')
+val = pd.read_json('data_kakao/data/val.json',typ = 'frame')
+test = pd.read_json('data_kakao/data/test.json',typ = 'frame')
 
 train_temp = train[['id','songs']].to_numpy()
 val_temp = val[['id','songs']].to_numpy()
@@ -241,7 +241,7 @@ artistId_check={}
 gnrId_check={}
 cnt=0
 
-song_meta= pd.read_json('data_kakao/data/arena3_song_meta.json', typ = 'frame')
+song_meta= pd.read_json('data_kakao/data/song_meta.json', typ = 'frame')
 
 meta_temp = song_meta[['id','album_id']].to_numpy()
 for songId,albumId in meta_temp:
