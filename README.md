@@ -44,6 +44,7 @@ CF feature 외에 tag/title, artist 정보를 사용합니다.
 data_preprocess.py 를 실행하면 됩니다. 결과 파일은 data_kakao_/data 폴더 내에 쓰여집니다.
 
 #### A2. tag / title 전처리
+tag_title-preprocess 를 실행하면 됩니다.
 카카오 Khaiii API를 사용하여, playlist에 달려있는 태그, 타이틀 정보를 처리합니다. 결과 파일은 playId2title_tag 과 data_kakao/data 폴더 내의 tag_morph, title_morph 입니다.
 
 
