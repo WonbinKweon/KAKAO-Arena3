@@ -42,7 +42,9 @@ CF feature 외에 tag/title, artist 정보를 사용합니다.
 
 ## A. 전처리
 #### A1. 모델을 위한 데이터 format 변경
-data_preprocess.py 를 실행하면 됩니다. 결과 파일은 data_kakao_/data 폴더 내에 쓰여집니다.
+data_preprocess.py 를 실행하면 됩니다. 결과 파일은 data_kakao/data 폴더 내에 쓰여집니다.
+기존에 주어지는 원본 데이터 파일은 용량상의 문제로 업로드 하지 않았습니다만, 실행을 위해서는 data_kakao/data/ 폴더 내에 넣으면 됩니다.
+
 
 #### A2. tag / title 전처리
 tag_title-preprocess 를 실행하면 됩니다.
