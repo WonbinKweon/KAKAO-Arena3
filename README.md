@@ -5,8 +5,8 @@
 사용된 추천 알고리즘은 최근 연구에서 여러 딥러닝 모델들을 압도하는 성능을 보이는 것으로 알려진, K-NN 입니다 [1].
 구체적으로, 두 플레이리스트의 similarity는 아래와 같이 계산됩니다.
 
-$$s_ij = \frac{R_i \cdot R_j}{||R_i||||R_j|| + S}$$
-\\[ a^2 = b^2 + c^2 \\]
+\\[$$s_ij = \frac{R_i \cdot R_j}{||R_i||||R_j|| + S}$$\\]
+
 
 위 식에 따라, Implicit CF rating matrix (playlist num x song num)의 경우, playlist i, j의 row vecotor R_i, R_j의 cosine similarity로 두 playlist의 similarity를 계산하며,
 이후, K nearest playlist에 담겨있는 song 정보를 종합하여, 추천에 사용합니다.
