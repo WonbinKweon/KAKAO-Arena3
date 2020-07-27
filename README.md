@@ -58,6 +58,7 @@ song_inference.py 를 실행하면 됩니다. 곡 추천 결과 파일은 ensemb
 
 ## C. tag 추천
 tag_inference.py 를 실행하면 됩니다. 태그 추천 결과 파일은 ensemble 폴더에 results_tag_final.json 파일 입니다.
+results_gnrpop_final.json 파일은 카카오에서 제공하는 baseline 코드의 실행 결과로, 제출 포맷을 그대로 사용하기 위해 사용합니다.
 
 
 ## D. 결과 종합
