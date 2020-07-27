@@ -39,9 +39,11 @@ tag 추천 역시 곡 추천과 동일한 K-NN 메소드를 사용합니다.
 
 ## 1. 전처리
 #### 1. 모델을 위한 데이터 format 변경
+data_preprocess.py 를 실행하면 됩니다. 결과 파일은 data_kakao_/data 폴더 내에 쓰여집니다.
 
 #### 2. tag / title 전처리
 카카오 Khaiii API를 사용하여, playlist에 달려있는 태그, 타이틀 정보를 처리합니다. 결과 파일은 playId2title_tag 과 data_kakao/data 폴더 내의 tag_morph, title_morph 입니다.
+
 
 ## 2. 곡 추천
 song_inference.py 를 실행하면 됩니다. 곡 추천 결과 파일은 ensemble 폴더에 ensemble_A, ensemble_CD 파일입니다.
@@ -51,7 +53,9 @@ song_inference.py 를 실행하면 됩니다. 곡 추천 결과 파일은 ensemb
 저희가 사용한 머신은 메모리가 상당히 커서, 별 지장이 없었으나, 만에하나 가용 메모리 초과 문제가 있을 경우, 각각 저장된 결과를 앙상블에 사용하면 됩니다.
 각각 저장된 결과는 ensemble 폴더에 들어있습니다 (song_x).
 
+
 ## 3. tag 추천
+tag_inference.py 를 실행하면 됩니다. 태그 추천 결과 파일은 ensemble 폴더에 results_tag_final.json 파일 입니다.
 
 
 ## 4. 결과 종합
