@@ -39,12 +39,14 @@ tag 추천 역시 곡 추천과 동일한 K-NN 메소드를 사용합니다.
 
 
 ## 2. 곡 추천
-
+song_inference.py 를 실행하면 됩니다.
+위에 서술된 8개의 feature조합에 대한 예측 수행 후, 앙상블한 결과를 저장합니다.
 
 ## 3. tag 추천
 
 
 ## 4. 결과 종합
+앙상블 된 song/tag 결과를 종합하여 최종 파일을 만듭니다.
 
 
 [1] Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches, RecSys 19
