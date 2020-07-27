@@ -33,6 +33,8 @@ CF 정보 외에, tag/title, artist, album 정보가 추가로 similarity 계산
 
 ## B. tag 추천
 tag 추천 역시 곡 추천과 동일한 K-NN 메소드를 사용합니다.
+CF feature 외에 tag/title, artist 정보를 사용합니다.
+
 
 # 2. 코드 설명
 전처리 결과는 이미 저장되어 있으므로, 코드 실행시에 다시 실행할 필요는 없습니다.  
