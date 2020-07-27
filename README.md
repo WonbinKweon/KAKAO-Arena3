@@ -8,7 +8,8 @@
 $s_ij = \frac{R_i \cdot R_j}{||R_i||||R_j|| + S}$
 
 위 식에 따라, Implicit CF rating matrix (playlist num x song num)의 경우, playlist i, j의 row vecotor R_i, R_j의 cosine similarity로 두 playlist의 similarity를 계산하며,
-이후, K nearest playlist에 담겨있는 song 정보를 종합하여, 최종 추천에 반영합니다.
+이후, K nearest playlist에 담겨있는 song 정보를 종합하여, 추천에 사용합니다.
+추가적으로, 기타 feature를 기반으로한 re-ranking 등의 후처리 기법이 사용되었습니다.
 
 CF 정보 외에, tag/title, artist, album 정보가 추가로 similarity 계산에 사용되었으며,
 각 feature의 다양한 조합으로 만들어진 추천 결과를 종합하여 앙상블을 수행한 것이 최종 제출된 결과에 해당합니다.
