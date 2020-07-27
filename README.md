@@ -1,5 +1,6 @@
 # KAKAO-Arena3
 
+# 알고리즘 설명
 ## 곡 추천
 사용된 추천 알고리즘은 최근 연구에서 여러 딥러닝 모델들을 압도하는 성능을 보이는 것으로 알려진, K-NN 입니다 [1].
 구체적으로, 두 플레이리스트의 similarity는 아래와 같이 계산됩니다.
@@ -28,5 +29,21 @@ CF 정보 외에, tag/title, artist, album 정보가 추가로 similarity 계산
 | 앙상블 결과           | 1 - 8 종합        | 0.3124 |
 
 앙상블에는 최근 연구에서 좋은 결과를 보인 ranking importance scheme (exp(-ranking/T)) 을 사용하였습니다.
+
+## tag 추천
+tag 추천 역시 곡 추천과 동일한 K-NN 메소드를 사용합니다.
+
+# 코드 설명
+## 1. 전처리
+
+
+## 2. 곡 추천
+
+
+## 3. tag 추천
+
+
+## 4. 결과 종합
+
 
 [1] Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches, RecSys 19
