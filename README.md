@@ -50,6 +50,7 @@ song_inference.py 를 실행하면 됩니다. 곡 추천 결과 파일은 ensemb
 
 
 ## 4. 결과 종합
+inference.py 를 실행하면 됩니다. 결과 파일은 final_result.json 입니다.
 앙상블 된 song/tag 결과를 종합하여 최종 파일을 만듭니다.
 
 
